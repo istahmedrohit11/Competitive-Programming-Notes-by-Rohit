@@ -1,0 +1,61 @@
+https://www.codechef.com/practice/course/logical-problems/DIFF800/problems/SUBSCRIBE_?tab=statement
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t,n,x;
+    cin>>t;
+    while(t--){// the loop will stop when t becomes zero
+        cin>>n>>x;
+        int m=n/6;
+        if(n%6!=0) m++;
+         cout<<m*x<<endl;
+    }
+    return 0;
+}
+/*
+Step-by-step trace
+Initial values:
+t = 3
+
+Iteration 1
+
+t = 3 → while (t--) sees 3 (non-zero), then decrements t to 2.
+
+Reads: n = 1, x = 100.
+
+m = n / 6 = 1 / 6 = 0 (integer division).
+
+n % 6 = 1 → not zero, so m++ → m = 1.
+
+Output: m * x = 1 * 100 = 100.
+
+Iteration 2
+
+t = 2 → while (t--) sees 2, decrements t to 1.
+
+Reads: n = 12, x = 250.
+
+m = 12 / 6 = 2.
+
+n % 6 = 0 → no change to m.
+
+Output: 2 * 250 = 500.
+
+Iteration 3
+
+t = 1 → while (t--) sees 1, decrements t to 0.
+
+Reads: n = 16, x = 135.
+
+m = 16 / 6 = 2.
+
+n % 6 = 4 → not zero, so m++ → m = 3.
+
+Output: 3 * 135 = 405.
+
+Iteration 4
+
+t = 0 → while (t--) sees 0 → condition is false → loop stops.
+*/
