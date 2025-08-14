@@ -1,0 +1,32 @@
+https://www.codechef.com/practice/course/logical-problems/DIFF800/problems/AMR15A
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int N,A;
+    cin>>N;
+    int evenCount=0,i=0;
+    while(i<N){
+        cin>>A;
+        if(A%2==0){
+            evenCount++;
+        }
+        i++;
+    }
+    int oddCount=N-evenCount;
+    cout<<(evenCount>oddCount ? "READY FOR BATTLE" : "NOT READY")<<endl;
+     
+    return 0;
+}
+
+/*
+while(t--){ //the loop will stop when t becomes zero
+    } 
+  if (evenCount > oddCount) {
+        cout << "READY FOR BATTLE" << '\n';
+    }
+    else {
+        cout << "NOT READY" << '\n';
+    }
+*/
