@@ -1,0 +1,49 @@
+https://www.codechef.com/practice/course/logical-problems/DIFF800/problems/CHEFSCORE?tab=statement
+
+Test Score
+In a test, there are  N problems, each carrying  X marks. In each problem, Chef either received  X marks or  0 marks.
+Determine whether is it possible for Chef to achieve exactly Y marks.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#include<iostream>
+using namespace std;
+
+int main(){
+    int t,n1,x,y;
+    cin>>t;
+    while(t--){
+        cin>>n1>>x>>y;
+        if((y%x==0) && (y/x)<=n1) cout<<"YES\n";
+        else cout<<"NO\n";
+    }
+
+
+
